@@ -1,27 +1,47 @@
-using System;
+// using System;
 
-namespace Defining 
+namespace Modifiers
 {
-    //public class - accessible throughout the code base
-    public class Book
+    // access modifiers control how properties and methods are accessed
+    class Book
     {
-        // declare fields to hold data
-        string _name;
-        string _author;
-        int _pagecount;
+        // "public" members and methods can be accessed by any other code
+        // Note: this is *NOT* the right way to expose internal data
+        public string _name;
 
-        // classes have one or more constructors
+        // "protected" members can only be accessed by the class or a 
+        // derived class from this one
+        protected string _author;
+
+        // "private" is the default and can only be accessed by code 
+        // within the class itself
+        private int _pagecount;
+
         public Book(string name, string author, int pages) {
             _name = name;
-            _author =  author;
+            _author = author;
             _pagecount = pages;
         }
-    
-        // add methods used to operate on the class and data
+
         public string GetDescription() {
-            return $"{_name} by {_author} pages {_pagecount}";
+            return $"{_name} by {_author}, {_pagecount} pages";
+        }
+
+        // Member variables can be accessed via methods
+        public string GetName() {
+            return _name;
+        }
+
+        public void SetName(string s) {
+            _name = s;
+        }
+
+        public void SetAuthor(string s) {
+            _author = s;
+        }
+
+        public void SetPagecount(int c) {
+            _pagecount = c;
         }
     }
-
-
 }

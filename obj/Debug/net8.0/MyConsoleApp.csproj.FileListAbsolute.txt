@@ -65,3 +65,4 @@ C:\Users\JL2147\source\repos\MyConsoleApp\bin\Debug\net8.0\ku\Humanizer.resource
 C:\Users\JL2147\source\repos\MyConsoleApp\bin\Debug\net8.0\lb\Humanizer.resources.dll
 C:\Users\JL2147\source\repos\MyConsoleApp\bin\Debug\net8.0\lt\Humanizer.resources.dll
 C:\Users\JL2147\source\repos\MyConsoleApp\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+c:\Users\JL2147\source\repos\MyConsoleApp\obj\Debug\net8.0\MyConsoleApp.sourcelink.json
